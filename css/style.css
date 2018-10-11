@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+/*---------------------------------------
+ General styles              
+-----------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:active, a:hover {
+  color: #2B4F81;
+  text-decoration: none;
+}
+
+#service, #portfolio, #about
+#contact, footer {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#service, #portfolio {
+  background: #f3f3f3;
+  text-align: center;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/*---------------------------------------
+Typography              
+-----------------------------------------*/
+p {
+  color: #878787;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}
+
+/*---------------------------------------
+ Header styles              
+-----------------------------------------*/
+#home{
+  background: linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,09.5)), url('../img/b.jpeg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  z-index: -1;
+}
+
+#sidebar{
+  position: absolute;
+  left: -80px;
+  width: 80px;
+  height: 100vh;
+  background:linear-gradient(to top, #0099CC, #2B4F81);
+  transition: all 500ms linear;
+  z-index: 1;
+}
+
+#sidebar.active{
+  left: 0;
+}
+
+#sidebar ul li{
+  list-style: none;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#sidebar ul li a span.hide{
+  display: none;
+}
+
+#sidebar ul li a{
+  position: relative;
+  top: 0;
+  transition: all 0.6s ease-in-out; 
+}
+
+#sidebar ul li a:hover{
+  color: whitesmoke;
+  transform: scale(1.1);
+  top: -10px;
+}
+
+#sidebar .toggle-button{
+  position: absolute;
+  left: 120px;
+  top: 35px;
+}
+
+#sidebar .toggle-button span{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  margin: 5px 0;
+}
+
+#intro{
+  display: flex;
+  align-items: center;
+  color:#fff; 
+  height: 100vh;
+  text-align: right;
+}
+
+/*---------------------------------------
+  Buttons               
+-----------------------------------------*/
+
+.section-btn {
+  background: #0099cc;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 18px 32px; 
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.6s;
+  position: relative;
+  top: 0;
+}
+
+.section-btn:focus,
+.section-btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  top: -10px;
+}
+
+
+/*---------------------------------------
+  Service section              
+-----------------------------------------*/
+.service-thumb {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 42px 22px;
+  cursor: crosshair;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.service-thumb:hover {
+  background: #0099cc;
+  top: -10px;
+}
+
+.service-thumb:hover .fa,
+.service-thumb:hover h4, .service-thumb:hover p{
+  color: #ffffff;
+}
+
+.service-thumb h4 {
+  padding-bottom: 5px;
+}
+.service-thumb p{
+  color:#878787;
+}
+
+.service-thumb .fa {
+  color: #0099cc;
+  font-size: 62px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+
+.bg-blue {
+  background: #0099cc !important;
+}
+
+
+.bg-blue .fa, .bg-blue h4{
+  color: #ffffff;
+}
+
+/*---------------------------------------
+  About section              
+-----------------------------------------*/
+#about {
+  padding-top: 100px;
+  background: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,09.5)), url('../img/bggg.jpeg') 50% 0 repeat-y fixed;
+}
+
+.about-image-thumb img {
+  margin-bottom: 22px;
+  display: block;
+  text-align: center;
+}
+
+.about-image-thumb .social-icon li a {
+  background: #f0f0f0;
+}
+
+.about-thumb {
+  padding: 32px 12px;
+}
+
+.about-thumb p {
+  padding: 2px 0;
+}
+
+/*---------------------------------------
+  Social icon             
+-----------------------------------------*/
+
+.social-icon {
+  position: relative;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #0099bb;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.social-icon li a:hover {
+  background: #0099bc;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+
+/*---------------------------------------
+  Mobile Responsive styles              
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+  .service-thumb {
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+  #sidebar{
+    width: 75px;
+    left: -75px;
+  }
+
+  #sidebar ul li {
+    font-size: 35px;
+  }
+
+  #sidebar .toggle-button{
+    left: 100px;
+  }
+
+  #sidebar .toggle-button{
+    top: 25px;
+  }
+
+}
+
+@media (min-width: 985px) {
+  #sidebar ul li a {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
