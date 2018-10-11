@@ -209,6 +209,10 @@ p {
   text-align: center;
 }
 
+.about-thumb h2{
+  color: #fff;
+}
+
 .about-image-thumb .social-icon li a {
   background: #f0f0f0;
 }
@@ -262,6 +266,15 @@ p {
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
+
+@media (max-width: 768px) {
+  #about {
+    background: #fff;
+  }
+  .about-thumb h2{
+    color: #878787;
+  }
+}
 
 @media (max-width: 980px) {
   .service-thumb {
