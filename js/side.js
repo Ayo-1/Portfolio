@@ -11,7 +11,7 @@ function toggleSidebar() {
     function initParallax() {
         $('#service').parallax("50%", 50);
         $('#about').parallax("50%", 40);
-        $('#portfolio').parallax("50%", 30);
+        $('#projects').parallax("50%", 30);
         $('#contact').parallax("50%", 10);
         }
     initParallax();
