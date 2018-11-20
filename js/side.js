@@ -1,4 +1,3 @@
-
 function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle('active')
 }
@@ -7,7 +6,34 @@ function toggleSidebar() {
 
     "use strict";
 
-// Parallax Js
+    // Projects Slider
+    $('.owl-project').owlCarousel({
+        animateOut: 'fadeOut',
+        loop: true,
+        autoplayHoverPause: false,
+        autoplay: true,
+        smartSpeed: 1000,
+        dots: false,
+        nav: true,
+        navText: [
+            '<i class="fa fa-chevron-left"></i>',
+            '<i class="fa fa-chevron-right"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            900: {
+                items: 3,
+            }
+        }
+    });
+
+    // Parallax Js
     function initParallax() {
         $('#service').parallax("50%", 50);
         $('#about').parallax("50%", 40);
@@ -16,8 +42,7 @@ function toggleSidebar() {
         }
     initParallax();
         
-
-// smoothscroll js
+    // smoothscroll js
     $(function() {
         $('#home a').bind('click', function(event) {
             var $anchor = $(this);
@@ -27,5 +52,23 @@ function toggleSidebar() {
             event.preventDefault();
         });
     });
+
+    // scroll to top
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    $('.scrollToTop').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+
+
     
 })(jQuery);

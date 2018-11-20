@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <title>Adenuga Wilson</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="shortcut icon" href="img/favv.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
@@ -28,10 +29,12 @@
                     <li><a href="#service"  class="smoothScroll"><i class="fa fa-cogs"></i><span class="hide">Services</span></a></li>
                     <li><a href="#about" class="smoothScroll"><i class="fa fa-user-o"></i><span class="hide">About</span></a></li>
                     <li><a href="#projects" class="smoothScroll"><i class="fa fa-folder"></i><span class="hide">Portfolio</span></a></li>
-                    <li><a href="#" class="smoothScroll"><i class="fa fa-envelope-o"></i><span class="hide">Contact</span></a></li>
+                    <li><a href="#contact" class="smoothScroll"><i class="fa fa-envelope-open-o"></i><span class="hide">Contact</span></a></li>
+                    <li><a href="#"><i class="fa fa-newspaper-o"></i><span class="hide">Blog</span></a></li>
                 </ul>
             </div>
         </header>
+
         <section id="description"> 
             <div class="container parallax-section">
                 <div class="row" id="intro">
@@ -46,13 +49,14 @@
             </div>
         </section>
     </div>
+
     <section id="service" class="parallax-section">
         <div class="container">
             <div class="row">
                 <div class=" col-12 wow fadeInUp section-title" data-wow-delay="0.2s">
                     <!-- SECTION TITLE -->
                     <h2>SERVICES</h2>
-                    <p class="pt-4 pb-4">
+                    <p class="pt-4 pb-5">
                         I am passionate about building excellent software that improves the lives of those around me. I specialize in creating
                         software for clients ranging from individuals and small-businesses all the way to large enterprise corporations.
                     </p>
@@ -94,6 +98,7 @@
             </div>
         </div>
     </section>
+
     <!-- ABOUT SECTION -->
     <section id="about" class="parallax-section">
         <div class="container-fluid">
@@ -123,12 +128,12 @@
                     <div class="about-thumb">
                         <!-- SECTION TITLE -->
                         <div class="section-title">
-                            <h2 class="wow fadeInUp" data-wow-delay="0.4s">A little more about me</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">Graphic Designer, Creative Photographer & Front-end Developer</p>
+                            <h2 class="wow fadeInUp pb-4" data-wow-delay="0.4s">A little more about me</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.6s">Graphic Designer, Creative Photographer, Front-end Developer & aspiring Automotive Software Engineer </p>
                         </div>
                         <div>
                             <p class="wow fadeInUp" data-wow-delay="0.8s">
-                                A budding and Creative web designer and front‑end developer with an eye for simple, clean and efficient layout. I am proficient with the use of Html5, Css3, Wordpress, Javascript, Vue js and jquery.
+                                A budding and Creative web designer and front‑end developer with an eye for simple, clean and efficient layout. I am proficient with the use of Html5, CSS3, Wordpress, Javascript, Vue js and jquery.
                             </p>
                             <p class="wow fadeInUp" data-wow-delay="1.0s">
                                 I enjoy turning complex problems into simple, beautiful designs. When i"m not coding, you will find me watching movies, playing games or hanging out with friends/family.
@@ -141,71 +146,183 @@
     </section>
 
     <!-- WORK SECTION -->
-    <section id="projects" class="parallax-section">
+    <section id="projects">
         <div class="container">
             <div class="row">
-    
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-12">
                     <!-- SECTION TITLE -->
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                        <h2>SELECTED DESIGNS</h2>
-                        <p>Check out some of my personal projects.</p>
+                    <div class="section-title pb-5">
+                        <h2>PORTFOLIO</h2>
                     </div>
-                </div>
-    
-                
-                <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <!-- WORK THUMB -->
-                    <div class="work-thumb">
-                        <div class="work-thumb-overlay">
-                            <h4 class="text-white">Stayfit</h4>
-                            <span>
-                                Stayfit is a website built to educate people on the health benefits of regular exercise and eating good food. Built using Bootsrap 4, Css3, Html5, Vanilla js and Vue Js.
-                                <a href="https://oluwatunmiseadenuga.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Visit website</a>
-                            </span>
+
+                    <div class="owl-carousel owl-theme owl-project">
+
+                       <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Stayfit</h4>
+                                    <span>
+                                        Stayfit is a website built to educate people on the health benefits of regular exercise and eating good food. Built using Bootsrap 4, CSS3, Html5, Vanilla js and Vue Js.
+                                        <a href="https://oluwatunmiseadenuga.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a>
+                                    </span>
+                                </div>
+                                <img src="img/stayfit.jpeg" class="img-fluid" alt="Work 1">
+                                <h4 class="text-center bg-grey p-3">Stayfit</h4>
+                            </div>
                         </div>
-                        <img src="img/stayfit.jpeg" class="img-fluid" alt="Work 1">
-                        <h4 class="text-center bg-white p-3">Stayfit</h4>
-                    </div>
-                </div>
-    
-                <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <!-- WORK THUMB -->
-                    <div class="work-thumb">
-                        <div class="work-thumb-overlay">
-                            <h4 class="text-white">Portfolio</h4>
-                            <span>
-                                Portfolio is a one page website built with Css3, Bootstrap4 and Html5 Vanilla Js and Vue Js. It showcases all my skills and competence including links to projects i have worked on.
-                                <a href="https://adenugawilson.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">visit website</a>
-                            </span>
+
+                        <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Portfolio</h4>
+                                    <span>
+                                        Portfolio is a one page website built with CSS3, Bootstrap4 and Html5 Vanilla Js and Vue Js. It showcases all my skills and competence including links to projects i have worked on.
+                                        <a href="https://adenugawilson.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a>
+                                    </span>
+                                </div>
+                                <img src="img/b.jpeg" class="img-fluid" alt="Work 2">
+                                <h4 class="text-center bg-grey p-3">Portfolio</h4>
+                            </div>
                         </div>
-                        <img src="img/b.jpeg" class="img-fluid" alt="Work 2">
-                       <h4 class="text-center bg-white p-3">Portfolio</h4>
-                    </div>
-                </div>
-    
-                <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <!-- WORK THUMB -->
-                    <div class="work-thumb">
-                        <div class="work-thumb-overlay">
-                            <h4 class="text-white">Egbeda</h4>
-                            <span>
-                                Egbeda is a one page website built with Css3, Bootstrap4 and Html5  Vanilla Js and Vue Js.
-                                <a href="https://adenugawilson.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">visit website</a>
-                            </span>
+        
+                        <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Egbeda</h4>
+                                    <span>
+                                        Coming soon........
+                                        <!-- Egbeda is a one page website built with Css3, Bootstrap4 and Html5  Vanilla Js and Vue Js.
+                                        <a href="https://adenugawilson.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a> -->
+                                    </span>
+                                </div>
+                                <img src="img/slider1.jpg" class="img-fluid" alt="Work 3">
+                                <h4 class="text-center bg-grey p-3">Egbeda</h4>
+                            </div>
                         </div>
-                        <img src="img/slider1.jpg" class="img-fluid" alt="Work 3">
-                        <h4 class="text-center bg-white p-3">Egbeda</h4>
+
+                        <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Tj Art Gallery</h4>
+                                    <span>
+                                        Coming soon........
+                                        <!-- Egbeda is a one page website built with Css3, Bootstrap4 and Html5  Vanilla Js and Vue Js.
+                                                                <a href="https://adenugawilson.000webhostapp.com/index.html" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a> -->
+                                    </span>
+                                </div>
+                                <img src="img/tj.jpeg" class="img-fluid" alt="Work 3">
+                                <h4 class="text-center bg-grey p-3">Tj Art Gallery</h4>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Reveal</h4>
+                                    <span>
+                                        Coming soon........
+                                        <!-- Stayfit is a website built to educate people on the health benefits of regular exercise and eating good
+                                        food. Built using Bootsrap 4, Css3, Html5, Vanilla js and Vue Js.
+                                        <a href="https://oluwatunmiseadenuga.000webhostapp.com/index.html" onclick="window.open(this.href); return false;"
+                                            onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a> -->
+                                    </span>
+                                </div>
+                                <img src="img/g3.jpg" class="img-fluid" alt="Work 1">
+                                <h4 class="text-center bg-grey p-3">Reveal</h4>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="work-thumb">
+                                <div class="work-thumb-overlay">
+                                    <h4 class="text-white">Photomania</h4>
+                                    <span>
+                                        Coming soon........
+                                        <!-- Stayfit is a website built to educate people on the health benefits of regular exercise and eating good
+                                        food. Built using Bootsrap 4, Css3, Html5, Vanilla js and Vue Js.
+                                        <a href="https://oluwatunmiseadenuga.000webhostapp.com/index.html" onclick="window.open(this.href); return false;"
+                                            onkeypress="window.open(this.href); return false;"><i class="fa fa-arrow-right pl-1"></i></a> -->
+                                    </span>
+                                </div>
+                                <img src="img/g4.jpg" class="img-fluid" alt="Work 1">
+                                <h4 class="text-center bg-grey p-3">Photomania</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--==========================
+         Contact us section
+     ============================-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title pb-5 mb-3">
+                        <h2>Send me a message <i class="fa fa-paper-plane"></i></h2>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Your name...">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="inputPassword4" placeholder="Your email.....">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
+                                    required=""></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" id="form-submit" class="section-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="right-info">
+                        <ul>
+                            <li><a href="mailto:oluwatunmiseadenuga@gmail.com"><i class="fa fa-envelope-o"></i>oluwatunmiseadenuga@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+234 701 887 1296 / +234 703 183 2236</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>18, Lamfort Street, Challenge, Ibadan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <p>Copyright &copy; 2018 Adenuga Wilson
+    
+                        | Design: Adenuga Wilson</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+
 </body>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
