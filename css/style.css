@@ -93,7 +93,6 @@ p {
 
 #sidebar ul li a span.hide{
   display: none;
-  font-size: 15px;
 }
 
 #sidebar ul li a{
@@ -110,6 +109,7 @@ p {
 
 #sidebar ul li a:hover .hide {
  display: block;
+ font-size: 15px;
 }
 
 #sidebar .toggle-button{
@@ -468,7 +468,7 @@ p {
 footer {
   text-align: center;
   background: #304352;
-  padding: 20px 0px;
+  padding: 60px 0px;
 }
 
 footer ul {
