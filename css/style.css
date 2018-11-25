@@ -19,13 +19,17 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-#service, #projects, #about,
+ul li{
+  list-style: none;
+}
+
+#service, #projects,
 #contact, footer {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-#service, #projects {
+#service{
   background: #fafafa;
 }
 
@@ -37,15 +41,22 @@ a:active, a:hover {
 .section-title h2 {
   text-transform: uppercase;
   color: #304352;
-   text-align: center;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0 !important;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea{
   outline: none;
-  border: none !important;
+  border: transparent;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1) !important;
+}
+
+.bg-navy{
+  background: #304052;
+  border-radius: 10px;
 }
 
 /*---------------------------------------
@@ -75,7 +86,7 @@ p {
   left: -80px;
   width: 80px;
   height: 100vh;
-  background: #CFB53B;
+  background: #304552;
   transition: all 500ms linear;
   z-index: 1;
 }
@@ -139,7 +150,7 @@ p {
 -----------------------------------------*/
 
 .section-btn {
-  background: #CFB53B;
+  background: #304352;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -157,7 +168,7 @@ p {
 .section-btn:focus,
 .section-btn:hover {
   background: #fff;
-  color: #CFB53B;
+  color: #304352;
   border: 1px solid #fff;
   top: -10px;
 }
@@ -178,12 +189,13 @@ p {
   cursor: crosshair;
   position: relative;
   top: 0;
+  color: #304352;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
 .service-thumb:hover {
-  background: #CFB53B;
+  background: #304352;
   top: -10px;
 }
 
@@ -198,7 +210,7 @@ p {
 
 
 .service-thumb .fa {
-  color: #CFB53B;
+  color: #304352;
   font-size: 62px;
   text-align: center;
   margin-top: 32px;
@@ -206,8 +218,8 @@ p {
 }
 
 .bg-blue {
-  background: #CFB53B !important;
-}
+  background: #304352 !important;
+} 
 
 .bg-grey {
   background: #fafafa !important;
@@ -221,41 +233,37 @@ p {
   About section              
 -----------------------------------------*/
 #about {
-  padding-top: 100px;
-  background: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,09.5)), url('../img/bggg.jpeg') 50% 0 repeat-y fixed;
+  padding: 50px;
 }
 
-.about-image-thumb img {
-  margin-bottom: 22px;
-  display: block;
-  text-align: center;
+.about-thumb .tools li{
+  padding: 20px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.about-thumb h2{
+.about-thumb .right h2{
   color: #fff;
 }
 
-.about-image-thumb .social-icon li a {
-  background: #CFB53B;
-}
+.about-thumb{
+ padding: 0 50px;
+} 
 
-.about-thumb {
-  padding: 32px 12px;
-}
-
-.about-thumb p {
+.about-thumb p{
+  color: #304052;
   padding: 2px 0;
 }
-
 /*---------------------------------------
   Work section              
 -----------------------------------------*/
-#projects {
-  background: #fff;
-}
 
 #projects .owl-carousel .item {
   margin: 10px;
+}
+
+#projects .owl-carousel .item .work-thumb {
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1)
 }
 
 #projects.work-thumb h2 {
@@ -310,8 +318,9 @@ p {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background: #CFB53B;
+  background: #304352;
   color: #fff;
+   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1)
 }
 
 #projects .owl-theme .owl-nav [class*=owl-]:active,
@@ -326,31 +335,31 @@ p {
 }
 
 .social-icon li {
-  display: inline-block;
+  display: block;
   list-style: none;
 }
 
 .social-icon li a {
-  background: #CFB53B;
+  background: #fff;
   border-radius: 100%;
-  color: #fff;
+  color: #CFB53B;
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
   vertical-align: middle;
   position: relative;
   top: 0;
-  margin: 0px 6px 10px 6px;
+  margin: 6px 15px;
 }
 
 .social-icon li a:hover {
   background: transparent;
-  color: #CFB53B;
+  color: #304352;
   transform: scale(1.1);
   top: -5px;
 }
@@ -360,14 +369,13 @@ p {
 --------------------------------*/
 #contact {
   background: #fafafa;
-  padding: 10% 0 50px 0;
 }
 
 #contact input {
   padding-left: 15px;
   font-size: 13px;
   color: #7a7a7a;
-  border: 1px solid #eee;
+  border: transparent;
   outline: none;
   height: 44px;
   border-radius: 22px;
@@ -376,7 +384,7 @@ p {
 
 #contact textarea {
   border-radius: 22px;
-  border: 1px solid #eee;
+  border: transparent;
   padding: 15px;
   font-size: 13px;
   color: #7a7a7a;
@@ -391,10 +399,8 @@ p {
 }
 
 
-#contact input[type="text"]:focus,
-#contact input[type="email"]:focus,
-#contact textarea:focus {
-  border: 1px solid #CFB53B;
+#contact input:focus,#contact textarea:focus{
+  border: 1px solid #304352;
 }
 
 #contact button {
@@ -405,61 +411,32 @@ p {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: #CFB53B;
+  background-color: #304052;
   color: #fff;
   letter-spacing: 1px;
 }
 
 #contact button:hover {
-  color: #fff;
-  background-color: #304352;
-  border: 1px solid #304352;
+  color: #304052;
+  background-color: #fff;
+  border: 1px solid #fff;
   transition: all 0.3s;
 }
 
 #contact .right-info {
-  margin-left: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#contact .right-info ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+#contact .left-info {
+  padding:50px;
 }
 
-#contact .right-info ul li {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  color: #304352;
-  margin-bottom: 20px;
-}
-
-#contact .right-info ul li a {
-  text-decoration: none;
-  color: #304352;
-}
-
-#contact .right-info ul li i {
-  margin-right: 15px;
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
-  text-align: center;
-  color: #304352;
-  border-radius: 50%;
-  border: 1px solid #304352;
-  font-size: 18px;
-  transition: all ease-in-out 0.6s;
-}
-
-#contact .right-info ul li i:hover {
+#contact .right-info h2 {
   color: #fff;
-  background: #304352;
-  font-size: 18px;
 }
-
 
 /* ======================
 ----- FOOTER SECTION ----
@@ -521,8 +498,8 @@ footer em {
 .scrollToTop {
   position: fixed;
   display: none;
-  background: #CFB53B;
-  color: #fff;
+  background: #fff;
+  color: #304352;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
@@ -530,28 +507,19 @@ footer em {
   bottom: 15px;
   transition: background 0.5s;
   border-radius: 50%;
+  z-index: 7;
 }
 
 .scrollToTop:hover,
 .scrollToTop:active,
 .scrollToTop:focus {
-  color: #fff;
-  background: #CFB53B;
+  color: #304052;
+  background: #fff;
 }
 
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
-
-@media (max-width: 768px) {
-  #about {
-    background: #fff;
-  }
-  .about-thumb h2{
-    color: #878787;
-  }
-}
-
 @media (max-width: 980px) {
   .service-thumb {
     margin-top: 12px;
@@ -582,24 +550,21 @@ footer em {
   }
 }
 
-@media (max-width: 992px) {
-  #contact .right-info {
-    text-align: left;
-    margin-left: 0px;
-    margin-top: 45px;
+@media (max-width: 760px) {
+  #about, #contact, #projects, #service {
+    padding: 20px;
   }
 
-}
-
-@media (max-width: 850px) {
-  #contact {
-    text-align: center;
-    padding: 50px 0px 0px 0px;
+  .about-thumb {
+    padding: 10px 0;
   }
 
-  #contact .right-info {
-    text-align: left;
-    margin-left: 0px;
-    margin-top: 45px;
+  .about-thumb .tools li {
+    padding: 20px 15px;
   }
+
+  #contact .left-info{
+    order: 1;
+  }
+
 }
