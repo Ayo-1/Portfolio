@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+@import url('https://fonts.googleapis.com/css?family=Ranga');
 
 /*---------------------------------------
  General styles              
@@ -19,18 +20,23 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-ul li{
-  list-style: none;
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-#service, #projects,
+ul li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#service,  #about, #projects,
 #contact, footer {
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 100px 0;
 }
 #service{
-  background: #fafafa;
+  background: #f9f9f9;
 }
 
 .parallax-section {
@@ -42,7 +48,7 @@ ul li{
   text-transform: uppercase;
   color: #304352;
   text-align: center;
-  padding: 10px;
+  padding: 0px 10px 15px 10px;
   margin-bottom: 0 !important;
 }
 
@@ -110,10 +116,11 @@ p {
   position: relative;
   top: 0;
   transition: all 0.6s ease-in-out; 
+  color: #00ffbc;
 }
 
 #sidebar ul li a:hover{
-  color: whitesmoke;
+  color: #fff;
   transform: scale(1.1);
   top: -10px;
 }
@@ -150,10 +157,10 @@ p {
 -----------------------------------------*/
 
 .section-btn {
-  background: #304352;
+  background: #00ffbc;
   border: none;
   border-radius: 50px;
-  color: #fff;
+  color: #304352;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -167,9 +174,9 @@ p {
 
 .section-btn:focus,
 .section-btn:hover {
-  background: #fff;
-  color: #304352;
-  border: 1px solid #fff;
+  background: #304352;
+  color: #00ffbc;
+  border: 1px solid #304352;
   top: -10px;
 }
 
@@ -210,7 +217,7 @@ p {
 
 
 .service-thumb .fa {
-  color: #304352;
+  color: #00ffbc;
   font-size: 62px;
   text-align: center;
   margin-top: 32px;
@@ -232,14 +239,18 @@ p {
 /*---------------------------------------
   About section              
 -----------------------------------------*/
-#about {
-  padding: 50px;
+.about-thumb .tools li{
+  padding:20px 0;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-.about-thumb .tools li{
-  padding: 20px 30px;
-  font-size: 16px;
-  text-transform: uppercase;
+.about-thumb  .right li {
+  padding-left: 60px;
+}
+
+.about-thumb .tools li .fa {
+  color: #00ffbc;
 }
 
 .about-thumb .right h2{
@@ -254,79 +265,88 @@ p {
   color: #304052;
   padding: 2px 0;
 }
+
+#about .display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /*---------------------------------------
   Work section              
 -----------------------------------------*/
-
-#projects .owl-carousel .item {
-  margin: 10px;
+#projects p {
+  text-align: center;
 }
 
-#projects .owl-carousel .item .work-thumb {
-  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1)
+.work {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 800;
 }
 
-#projects.work-thumb h2 {
-  font-size: 25px;
-}
-
-#projects .work-thumb h4 {
-  text-transform: uppercase;
-  color: #304352;
-}
-
-#projects .work-thumb-overlay {
+.work .work-overlay {
   position: absolute;
-  background: #304352;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
-  width: 100%;
+  background: rgba(20, 20, 20, 0.6);
   height: 100%;
-  padding: 40px 35px;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.5s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-#projects .work-thumb-overlay span {
-  line-height: 2;
-  color: #CFB53B;
-}
-
-#projects .work-thumb-overlay a .fa {
- font-size: 22px;
-}
-
-#projects .work-thumb-overlay a .fa:hover,
-#projects .work-thumb-overlay a .fa:active {
-  color: #fff;
-}
-
-#projects .work-thumb:hover .work-thumb-overlay {
+.work:hover .work-overlay {
   opacity: 1;
 }
 
-#projects .owl-theme .owl-nav {
-  margin-top: 20px;
-  text-align: center;
+.work-overlay ul li {
+  margin: 0 5px 0 5px;
 }
 
-#projects .owl-theme  .owl-nav [class*=owl-] {
-  border-radius: 2px;
-  font-size: 16px;
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
+.work .work-overlay h3{
+  padding: 25px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.work .work-overlay a.right {
+  border: 1px solid #304352;
   background: #304352;
   color: #fff;
-   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1)
+  font-size: 12px;
+  transition: ease-in-out .8s;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+   0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-#projects .owl-theme .owl-nav [class*=owl-]:active,
-#projects .owl-theme .owl-nav [class*=owl-]:focus {
-  outline: none;
+.work .work-overlay a.left {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  transition: ease-in-out .8s;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+   0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
+
+.work .work-overlay a.left:hover {
+  border: 1px solid #304352;
+  background: #304352;
+  color: #fff;
+}
+
+.work .work-overlay a.right:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
 /*---------------------------------------
   Social icon             
 -----------------------------------------*/
@@ -342,7 +362,7 @@ p {
 .social-icon li a {
   background: #fff;
   border-radius: 100%;
-  color: #CFB53B;
+  color: #00ffbc;
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
@@ -368,7 +388,7 @@ p {
 /*reach out section
 --------------------------------*/
 #contact {
-  background: #fafafa;
+  background: #f9f9f9;
 }
 
 #contact input {
@@ -400,7 +420,7 @@ p {
 
 
 #contact input:focus,#contact textarea:focus{
-  border: 1px solid #304352;
+  border: 1px solid #00ffbc;
 }
 
 #contact button {
@@ -411,31 +431,26 @@ p {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: #304052;
-  color: #fff;
+  background-color: #00ffbc;
+  color: #304352;
   letter-spacing: 1px;
 }
 
 #contact button:hover {
-  color: #304052;
-  background-color: #fff;
-  border: 1px solid #fff;
+  color: #00ffbc;
+  background-color: #304352;
+  border: 1px solid #304352;
   transition: all 0.3s;
+  outline: none;
+  box-shadow: none;
 }
 
-#contact .right-info {
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* #contact h2 {
+  color: #fff
+}  */
 
-#contact .left-info {
-  padding:50px;
-}
-
-#contact .right-info h2 {
-  color: #fff;
+ #contact p {
+ text-align: center;
 }
 
 /* ======================
@@ -461,21 +476,21 @@ footer ul li {
 
 footer ul li a {
   font-size: 16px;
-  color: #fff;
+  color: #304052;
   display: inline-block;
   width: 38px;
   height: 38px;
   line-height: 38px;
   text-align: center;
-  background-color: #CFB53B;
+  background-color: #00ffbc;
   border-radius: 50%;
   position: relative;
   top: 0;
 }
 
 footer ul li a:hover {
-  background-color: #fff;
-  color: #CFB53B;
+  background-color: #304052;
+  color: #00ffbc;
   transition: all 0.3s;
    transform: scale(1.1);
    top: -5px;
@@ -498,7 +513,7 @@ footer em {
 .scrollToTop {
   position: fixed;
   display: none;
-  background: #fff;
+  background: #00ffbc;
   color: #304352;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -514,7 +529,7 @@ footer em {
 .scrollToTop:active,
 .scrollToTop:focus {
   color: #304052;
-  background: #fff;
+  background: #00ffbc;
 }
 
 /*---------------------------------------
@@ -552,19 +567,19 @@ footer em {
 
 @media (max-width: 760px) {
   #about, #contact, #projects, #service {
-    padding: 20px;
+    padding: 30px;
   }
 
   .about-thumb {
     padding: 10px 0;
+    margin: 0 !important;
   }
 
   .about-thumb .tools li {
-    padding: 20px 15px;
+    font-size: 13px;
   }
 
-  #contact .left-info{
-    order: 1;
+  .contact-img{
+    display: none;
   }
-
 }

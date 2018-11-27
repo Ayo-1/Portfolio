@@ -12,6 +12,7 @@ function toggleSidebar() {
         loop: true,
         autoplayHoverPause: false,
         autoplay: true,
+        margin: 25,
         smartSpeed: 1000,
         dots: false,
         nav: true,
