@@ -35,9 +35,6 @@ ul li{
 #contact, footer {
   padding: 100px 0;
 }
-#service{
-  background: #f9f9f9;
-}
 
 .parallax-section {
   background-attachment: fixed !important;
@@ -56,13 +53,12 @@ input[type="text"],
 input[type="email"],
 textarea{
   outline: none;
-  border: transparent;
-  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1) !important;
+  border: none;
+  box-shadow: none !important;
 }
 
-.bg-navy{
-  background: #304052;
-  border-radius: 10px;
+.section-title p{
+  text-align: center;
 }
 
 /*---------------------------------------
@@ -126,8 +122,9 @@ p {
 }
 
 #sidebar ul li a:hover .hide {
- display: block;
+ /* display: block; */
  font-size: 15px;
+ display: flex;
 }
 
 #sidebar .toggle-button{
@@ -186,6 +183,7 @@ p {
 -----------------------------------------*/
 #service{
   text-align: center;
+  background: #F4F0EA;
 }
 
 .service-thumb {
@@ -239,42 +237,60 @@ p {
 /*---------------------------------------
   About section              
 -----------------------------------------*/
-.about-thumb .tools li{
-  padding:20px 0;
-  font-size: 14px;
+#about{
+  background-color: #f9f9f9;
+}
+
+.about-thumb .tools{
+  font-weight: 900;
+}
+
+#about .sub-title h2{
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.about-thumb  .right li {
-  padding-left: 60px;
+ #about .social-icon li a{
+  margin-left: 0;
+ }
+
+#about .tm-progress {
+  background: #fff;
+  border-radius: 2px;
+  height: 5px;
+  margin: 10px 0;
+ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+ 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.about-thumb .tools li .fa {
-  color: #00ffbc;
+#about .progress-bar-danger {
+  background: #00ffbc;
 }
 
-.about-thumb .right h2{
-  color: #fff;
+#about .tm-progress-label {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #878787;
 }
 
-.about-thumb{
- padding: 0 50px;
-} 
-
-.about-thumb p{
+#about .progress-percent-small {
+  display: block;
+  float: right;
+  padding-right: 80px;
   color: #304052;
-  padding: 2px 0;
-}
-
-#about .display{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 /*---------------------------------------
   Work section              
 -----------------------------------------*/
+#projects{
+  background-color: #f9f9f9;
+}
+
 #projects p {
   text-align: center;
 }
@@ -299,6 +315,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all ease-in-out .8s;
 }
 
 .work:hover .work-overlay {
@@ -360,7 +377,7 @@ p {
 }
 
 .social-icon li a {
-  background: #fff;
+  background: transparent;
   border-radius: 100%;
   color: #00ffbc;
   cursor: pointer;
@@ -385,26 +402,27 @@ p {
 }
 
 
-/*reach out section
+/*contact section
 --------------------------------*/
 #contact {
-  background: #f9f9f9;
+  background: #F4F0EA;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  border: 2px solid #00ffbc;
+  border-radius: 0;
+  background: transparent;
 }
 
 #contact input {
-  padding-left: 15px;
   font-size: 13px;
-  color: #7a7a7a;
-  border: transparent;
-  outline: none;
   height: 44px;
-  border-radius: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
 
 #contact textarea {
-  border-radius: 22px;
-  border: transparent;
   padding: 15px;
   font-size: 13px;
   color: #7a7a7a;
@@ -421,6 +439,7 @@ p {
 
 #contact input:focus,#contact textarea:focus{
   border: 1px solid #00ffbc;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1) !important;
 }
 
 #contact button {
@@ -444,10 +463,6 @@ p {
   outline: none;
   box-shadow: none;
 }
-
-/* #contact h2 {
-  color: #fff
-}  */
 
  #contact p {
  text-align: center;
@@ -565,21 +580,20 @@ footer em {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   #about, #contact, #projects, #service {
     padding: 30px;
   }
 
-  .about-thumb {
-    padding: 10px 0;
-    margin: 0 !important;
-  }
-
-  .about-thumb .tools li {
-    font-size: 13px;
-  }
-
   .contact-img{
     display: none;
+  }
+
+  .work{
+    margin: 15px;
+  }
+
+  .about-thumb{
+    margin-bottom: 15px;
   }
 }

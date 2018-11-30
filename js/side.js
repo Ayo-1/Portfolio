@@ -5,35 +5,7 @@ function toggleSidebar() {
 (function ($) {
 
     "use strict";
-
-    // Projects Slider
-    $('.owl-project').owlCarousel({
-        animateOut: 'fadeOut',
-        loop: true,
-        autoplayHoverPause: false,
-        autoplay: true,
-        margin: 25,
-        smartSpeed: 1000,
-        dots: false,
-        nav: true,
-        navText: [
-            '<i class="fa fa-chevron-left"></i>',
-            '<i class="fa fa-chevron-right"></i>'
-        ],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            900: {
-                items: 3,
-            }
-        }
-    });
-
+    
     // Parallax Js
     function initParallax() {
         $('#about').parallax("50%", 50);
