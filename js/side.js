@@ -1,6 +1,24 @@
 function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle('active')
+    document.getElementById("sidebar").classList.toggle('active');
+    document.querySelector('.toggle-button .green').classList.toggle('white');
 }
+
+const menu = document.querySelector('#sidebar ul');
+
+menu.addEventListener('mouseover', e => {
+    if (e.target.classList.contains('fa')){
+        e.target.style.opacity = .2;
+        e.target.nextElementSibling.style.opacity = 1;
+    }
+});
+
+
+menu.addEventListener('mouseout', e => {
+    if (e.target.classList.contains('fa')) {
+        e.target.style.opacity = 1;
+        e.target.nextElementSibling.style.opacity = 0;
+    }
+});
 
 (function ($) {
 
@@ -41,7 +59,4 @@ function toggleSidebar() {
         return false;
     });
 
-
-
-    
 })(jQuery);
