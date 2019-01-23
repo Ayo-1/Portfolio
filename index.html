@@ -23,15 +23,40 @@
             <div id="sidebar">
                 <div class="toggle-button" onclick="toggleSidebar()">
                     <span></span>
-                    <span></span>
+                    <span class="green"></span>
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="#about" class="smoothScroll"><i class="fa fa-user-o"></i><span class="hide">About</span></a></li>
-                    <li><a href="#service"  class="smoothScroll"><i class="fa fa-laptop"></i><span class="hide">Services</span></a></li>
-                    <li><a href="#projects" class="smoothScroll"><i class="fa fa-folder"></i><span class="hide">Portfolio</span></a></li>
-                    <li><a href="#contact" class="smoothScroll"><i class="fa fa-envelope-open-o"></i><span class="hide">Contact</span></a></li>
-                    <li><a href="#"><i class="fa fa-newspaper-o"></i><span class="hide">Blog</span></a></li>
+                    <li>
+                        <a href="#about" class="smoothScroll link">
+                            <i class="fa fa-user-o"></i>
+                            <span class="hide">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#service"  class="smoothScroll link">
+                            <i class="fa fa-laptop"></i>
+                            <span class="hide">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="smoothScroll link">
+                         <i class="fa fa-folder"></i>
+                            <span class="hide">Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="smoothScroll link">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="hide">Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa fa-newspaper-o"></i>
+                            <span class="hide">Blog</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -55,36 +80,38 @@
 
     <!-- ABOUT SECTION -->
     <section id="about">
-        <div class="container">
+        <div class="container bad parallax-section">
             <div class="section-title">
-                <h2 class="wow fadeInLeft" data-wow-delay="0.6s">about me</h2>
-                <p class="pt-4 pb-5 wow fadeInRight" data-wow-delay="0.6s">
-                    Web designer & front‑end developer focused on crafting clean & user‑friendly experiences.
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">about me</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                    A budding and Creative web designer and front‑end developer with an eye for simple, clean and efficient layout.
+                    Some of the tools i use include <span class="tools">Html5, CSS3, Wordpress, Javascript, Vue js, Bulma, Pivotal
+                    Tracker, Slack, jquery, Git, Vs Code, Npm</span>.
+                </p>
+                <p class="wow fadeInUp pb-5" data-wow-delay="0.6s">
+                    I enjoy turning complex problems into simple, beautiful designs. When i"m not coding, you will find me watching
+                    movies, playing games or hanging out with friends/family.
                 </p>
             </div>
-            <div class="row">
 
-                <!-- profile -->
-                <div class="col-md-6 about-thumb">
-                    <div class="sub-title">
-                        <h2 class="wow fadeInLeft pl-5" data-wow-delay="0.6s">Profile</h2>
-                    </div>
-                    <div class="about-thumb d-flex profile">
-                        <ul class="social-icon text-center d-flex flex-column justify-content-center">
-                            <li class="wow fadeInUp" data-wow-delay="0.4s">
+            <div class="row">
+                <div class="col-md-6 about-thumb profile mb-0">
+                    <div class="about-thumb d-flex">
+                        <ul class="social-icon d-flex flex-column">
+                            <li class="wow fadeInUp" data-wow-delay="0.2s">
                                 <a href="https://www.facebook.com/adenuga.oluwatunmise" onclick="window.open(this.href); return false;"
                                     onkeypress="window.open(this.href); return false;" class="fa fa-facebook"></a>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="0.6s">
+                            <li class="wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="https://www.twitter.com/adenugawilson/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"
                                     class="fa fa-twitter"></a>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="0.8s">
+                            <li class="wow fadeInUp" data-wow-delay="0.6s">
                                 <a href="https://www.instagram.com/tunmii_sheii/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"
                                     class="fa fa-instagram">
                                 </a>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="1.0s">
+                            <li class="wow fadeInUp" data-wow-delay="0.8s">
                                 <a href="https://www.linkedin.com/in/oluwatunmise-adenuga-08ab34149/" onclick="window.open(this.href); return false;"
                                     onkeypress="window.open(this.href); return false;" class="fa fa-linkedin">
                                 </a>
@@ -95,61 +122,48 @@
                                 </a>
                             </li>
                         </ul>
-                        <div>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">
-                                Graphic Designer, Creative Photographer, Front-end Developer & aspiring Automotive Software Engineer
-                            </p>
-                            <p class="wow fadeInDown" data-wow-delay="0.8s">
-                                A budding and Creative web designer and front‑end developer with an eye for simple, clean and efficient layout.
-                                Some of the tools i use include <span class="tools">Html5, CSS3, Wordpress, Javascript, Vue js, Bulma, Pivotal Tracker, Slack, jquery, Git, Vs Code, Npm</span>.
-                            </p>
-                            <p class="wow fadeInUp" data-wow-delay="1.0s">
-                                I enjoy turning complex problems into simple, beautiful designs. When i"m not coding, you will find me watching
-                                movies, playing games or hanging out with friends/family.
-                            </p>
-                        </div>
                     </div>
                </div>
 
                <!-- progress bar -->
                 <div class="col-md-6 skills-bar about-thumb">
                     <div class="sub-title">
-                        <h2 class="wow fadeInLeft" data-wow-delay="0.6s">Some Skills</h2>
-                        <p class="wow fadeInRight" data-wow-delay="0.6s">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Some Skills</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">
                             A junior web developer, my coding journey started May 2018. I am a fast and willing learner, some of my skills and competencies include but are not limited to the following;
                         </p>
                     </div>
-                    <div class="skills wow fadeInUp" data-wow-delay=".8s">
-                        <h4 class="tm-progress-label">Bootstrap 4 <small class="progress-percent-small">80%</small></h4>
-                        <div class="progress tm-progress">
+                    <div class="skills">
+                        <h4 class="tm-progress-label wow fadeInUp" data-wow-delay=".6s">Bootstrap 4 <small class="progress-percent-small">80%</small></h4>
+                        <div class="progress tm-progress wow fadeInUp" data-wow-delay=".8s">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 80%;">
                             </div>
                         </div>
 
-                        <h4 class="tm-progress-label">css3 <small class="progress-percent-small">80%</small></h4>
-                        <div class="progress tm-progress">
+                        <h4 class="tm-progress-label wow fadeInUp" data-wow-delay="1s">css3 <small class="progress-percent-small">80%</small></h4>
+                        <div class="progress tm-progress wow fadeInUp" data-wow-delay="1.2s">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 80%;">
                             </div>
                         </div>
 
-                        <h4 class="tm-progress-label">HTML5 <small class="progress-percent-small">90%</small></h4>
-                        <div class="progress tm-progress">
+                        <h4 class="tm-progress-label wow fadeInUp" data-wow-delay="1.4s">HTML5 <small class="progress-percent-small">90%</small></h4>
+                        <div class="progress tm-progress wow fadeInUp" data-wow-delay="1.6s">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 90%;">
                             </div>
                         </div>
 
-                        <h4 class="tm-progress-label">jquery <small class="progress-percent-small">80%</small></h4>
-                        <div class="progress tm-progress">
+                        <h4 class="tm-progress-label wow fadeInUp" data-wow-delay="1.8s">jquery <small class="progress-percent-small">80%</small></h4>
+                        <div class="progress tm-progress wow fadeInUp" data-wow-delay="2s">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                 aria-valuemax="100" style="width: 80%;">
                             </div>
                         </div>
 
-                        <h4 class="tm-progress-label">Git <small class="progress-percent-small">80%</small></h4>
-                        <div class="progress tm-progress">
+                        <h4 class="tm-progress-label wow fadeInUp" data-wow-delay="2.2s">Git <small class="progress-percent-small">80%</small></h4>
+                        <div class="progress tm-progress wow fadeInUp" data-wow-delay="2.4s">
                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 80%;">
                             </div>
@@ -161,13 +175,13 @@
     </section>
     <!-- about section ends here -->
 
-    <!-- service section starts here     -->
+    <!-- service section starts here -->
     <section id="service" class="parallax-section">
         <div class="container">
             <div class="row">
-                <div class=" col-12 wow fadeInUp section-title" data-wow-delay="0.2s">
-                    <h2>SERVICES</h2>
-                    <p class="pt-4 pb-5">
+                <div class="col-12 section-title">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">SERVICES</h2>
+                    <p class="pt-4 pb-5 wow fadeInUp" data-wow-delay="0.4s">
                         I am passionate about building excellent software that improves the lives of those around me. 
                     </p>
                 </div>
@@ -270,7 +284,7 @@
                     </div>
                 </div>
          
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".2s">
                     <div class="work">
                         <img class="img-fluid" src="img/tj.jpeg" alt="">
                         <div class="work-overlay">
@@ -285,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                     <div class="work">
                         <img class="img-fluid" src="img/stayfit.jpeg" alt="">
                         <div class="work-overlay">
@@ -300,7 +314,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".6s">
                     <div class="work">
                         <img class="img-fluid" src="img/egbeda.jpg" alt="">
                         <div class="work-overlay">
